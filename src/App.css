@@ -1,0 +1,82 @@
+/* Root variables for color scheme */
+:root {
+  --primary-color: #8e3e63; /* Dark Pinkish */
+  --secondary-color: #d2649a; /* Light Pink */
+  --tertiary-color: #f6fab9; /* Soft Yellow */
+  --accent-color: #cae6b2; /* Pale Green */
+}
+
+
+
+/* Button styles */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btns button {
+  background-color: var(--primary-color);
+  color: #f8d985;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(244, 182, 182, 0.1);
+}
+
+.btns button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.btns button:active {
+  transform: translateY(0);
+}
+
+/* Counter styles */
+.counter {
+  background-color: var(--tertiary-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 6px rgba(116, 232, 176, 0.1);
+  font-family: "Arial", sans-serif;
+  transition: transform 0.3s ease-in-out;
+  
+  justify-content: center;
+}
+
+.counter h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.counter button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.counter button:active {
+  transform: translateY(0);
+}
